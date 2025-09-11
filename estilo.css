@@ -62,7 +62,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-.hero_title ~ p{
+.hero_title~p {
     margin-bottom: .8rem;
     font-weight: bold;
     color: var(--primary-color);
@@ -141,7 +141,7 @@ img {
 
 .footer {
     background-color: var(--gray);
-    padding: 1rem;
+    padding: 2.5rem 1rem 0;
 }
 
 
@@ -178,6 +178,7 @@ i {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-top: 2rem;
 }
 
 .copyright a {
@@ -190,11 +191,16 @@ i {
     color: var(--primary-color-dark);
 }
 
-.links-container{
+.links-container {
     display: flex;
     flex-direction: column;
-    gap: .2rem;
+    gap: .5rem;
 }
+
+.link-separator {
+    display: none;
+}
+
 
 .hero,
 .brands,
@@ -227,14 +233,14 @@ i {
     grid-column: 1 / -1;
 }
 
-.link-separator {
-    display: none;
-}
-
 section h3,
 p,
 ul {
-    margin: .5rem 0 .5rem;
+    margin: .5rem 0 1rem;
+}
+
+h3 {
+    font-size: 19px;
 }
 
 @media screen and (min-width: 46.25em) {
@@ -345,6 +351,10 @@ ul {
         text-align: left;
     }
 
+    .about{
+        text-align: left;
+    }
+
     .about ul {
         gap: .5rem;
     }
@@ -359,6 +369,12 @@ ul {
         display: flex;
         gap: 1rem;
         margin: 0;
+    }
+
+    .links-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: .7rem;
     }
 
     .link-separator {
@@ -392,15 +408,15 @@ ul {
     }
 
     .row>.lg-4-6 {
-        grid-column: 4 / 6;
+        grid-column: 3 / 4;
     }
 
     .row>.lg-6-9 {
-        grid-column: 6 / 9;
+        grid-column: 7 / 8;
     }
 
     .row>.lg-9-12 {
-        grid-column: 9 / 12;
+        grid-column: 10 / -1;
     }
 
     .testemunho {
