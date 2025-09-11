@@ -128,6 +128,11 @@ img {
     padding: 1rem;
 }
 
+.user-img-container {
+    width: 12.5rem;
+    margin: 0 auto;
+}
+
 .contato {
     background-color: var(--gray);
     border-radius: 5px;
@@ -141,9 +146,14 @@ img {
 
 .footer {
     background-color: var(--gray);
-    padding: 2.5rem 1rem 0;
+    padding: 1rem 1rem .5rem;
 }
 
+.footer-content {
+    max-width: 67.25em;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
 
 .footer ul {
     list-style-type: none;
@@ -178,7 +188,6 @@ i {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-top: 2rem;
 }
 
 .copyright a {
@@ -194,13 +203,8 @@ i {
 .links-container {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .2rem;
 }
-
-.link-separator {
-    display: none;
-}
-
 
 .hero,
 .brands,
@@ -233,17 +237,43 @@ i {
     grid-column: 1 / -1;
 }
 
+.link-separator {
+    display: none;
+}
+
 section h3,
 p,
 ul {
-    margin: .5rem 0 1rem;
-}
-
-h3 {
-    font-size: 19px;
+    margin: .5rem 0 .5rem;
 }
 
 @media screen and (min-width: 46.25em) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem 0 0;
+    }
+
+    .header img {
+        display: block;
+    }
+
+    .header-menu {
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    .header-menu a {
+        padding: 0;
+    }
+
+    .header-menu a:hover {
+        color: var(--primary-color);
+    }
+
     .row {
         gap: 2rem;
     }
@@ -309,12 +339,16 @@ h3 {
 
     .testemunho {
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
         border-radius: 7px;
     }
 
+    .testemunho h3 {
+        margin-bottom: 1.5rem;
+    }
+
     .user-img-container {
-        max-width: 130px;
+        width: 8.125rem;
     }
 
     .testemunho_thumb {
@@ -324,6 +358,7 @@ h3 {
 
     .testemunho_content {
         text-align: left;
+        flex: 1;
     }
 
     .testemunho_content h3 {
@@ -348,10 +383,6 @@ h3 {
 
     .a,
     .contact {
-        text-align: left;
-    }
-
-    .about{
         text-align: left;
     }
 
@@ -383,6 +414,10 @@ h3 {
 }
 
 @media screen and (min-width: 90em) {
+    .header-menu {
+        font-size: 1.3rem;
+    }
+
     .contato_image {
         display: inline-block;
     }
@@ -407,18 +442,6 @@ h3 {
         grid-column: 7 / -1;
     }
 
-    .row>.lg-3-4 {
-        grid-column: 3 / 4;
-    }
-
-    .row>.lg-7-8 {
-        grid-column: 7 / 8;
-    }
-
-    .row>.lg-10-12 {
-        grid-column: 10 / -1;
-    }
-
     .testemunho {
         flex-direction: column;
     }
@@ -432,8 +455,16 @@ h3 {
         text-align: center;
     }
 
+    .user-img-container {
+        width: 10.625rem;
+    }
+
     .testemunho_content h3 {
         margin: .5rem;
+    }
+
+    .contact {
+        margin-inline-start: auto;
     }
 
     .contato_content {
