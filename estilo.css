@@ -407,15 +407,15 @@ h3 {
         grid-column: 7 / -1;
     }
 
-    .row>.lg-4-6 {
+    .row>.lg-3-4 {
         grid-column: 3 / 4;
     }
 
-    .row>.lg-6-9 {
+    .row>.lg-7-8 {
         grid-column: 7 / 8;
     }
 
-    .row>.lg-9-12 {
+    .row>.lg-10-12 {
         grid-column: 10 / -1;
     }
 
