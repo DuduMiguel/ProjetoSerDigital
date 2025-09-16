@@ -312,7 +312,7 @@ ul {
     transition: max-height .5s;
 }
 
-.header-menu:focus-within {
+.header-menu:focus-visible {
     max-height: 200px;
 }
 
@@ -328,7 +328,7 @@ ul {
     font-weight: bold;
     display: inline-block;
     padding: .4rem 0;
-    transition: color .3s ease-in-out;  
+    transition: color .3s ease-in-out;
 }
 
 .header-menu li a:hover {
@@ -353,16 +353,17 @@ ul {
     transform: rotate(-45deg);
 }
 
+.menu-btn:focus-visible+.menu-icon {
+    outline: 2px solid black;
+}
+
+
 .menu-icon {
     position: relative;
     cursor: pointer;
     user-select: none;
     height: 30px;
     padding: 0 2px;
-}
-
-.menu-btn:focus+.menu-icon {
-    outline: 2px solid black;
 }
 
 .nav-icon {
